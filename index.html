@@ -504,7 +504,102 @@
             to do so. This company helped us resume our business. Trust this
             financial assistance program and you will not be disappointed.
         </p>
-    </article>
+    <!-- Demande d'aide -->
+<section id="demande-aide" class="help-request">
+    <h2>Demande d'aide</h2>
+
+    <p class="intro">
+        Vous souhaitez soumettre une demande d'aide ?
+        Remplissez le formulaire ci-dessous avec des informations exactes.
+        Notre équipe pourra examiner votre demande et vous informer des prochaines étapes.
+    </p>
+
+    <form id="helpForm">
+
+        <div class="form-group">
+            <label for="fullName">Nom complet</label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Votre nom complet"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Adresse e-mail</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="exemple@email.com"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="country">Pays</label>
+            <input
+                type="text"
+                id="country"
+                name="country"
+                placeholder="Votre pays"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Numéro de téléphone</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Votre numéro de téléphone"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="helpType">Type d'aide demandée</label>
+            <select id="helpType" name="helpType" required>
+                <option value="">-- Sélectionnez une option --</option>
+                <option value="financial">Aide financière</option>
+                <option value="business">Soutien à une activité</option>
+                <option value="personal">Aide personnelle</option>
+                <option value="other">Autre demande</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Montant souhaité</label>
+            <input
+                type="number"
+                id="amount"
+                name="amount"
+                min="0"
+                placeholder="Montant souhaité"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="message">Décrivez votre demande</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Expliquez brièvement votre situation et votre besoin."
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit" class="button">
+            Envoyer ma demande
+        </button>
+
+    </form>
+  </section>
 
   </section>
 <section id="contact" class="contact">
